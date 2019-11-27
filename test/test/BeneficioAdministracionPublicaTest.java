@@ -5,7 +5,7 @@
  */
 package test;
 
-import dsej5.BeneficioJubilado;
+import dsej5.BeneficioAdministracionPublica;
 import org.junit.Test;
 import static org.junit.Assert.*;
 
@@ -13,18 +13,18 @@ import static org.junit.Assert.*;
  *
  * @author User
  */
-public class BeneficioJubiladoTest {
+public class BeneficioAdministracionPublicaTest {
     
-    public BeneficioJubiladoTest() {
+    public BeneficioAdministracionPublicaTest() {
     }
-    
+
     @Test
     public void testObtenerBeneficioImporte() {
-        BeneficioJubilado benef = new BeneficioJubilado();
-        double recibido = benef.obtenerBeneficioImporte(100);
-        double esperado = 75d;
+        BeneficioAdministracionPublica benef = new BeneficioAdministracionPublica();
+        double actual = benef.obtenerBeneficioImporte(100);
+        double esperado = 50d;
         
-        assertEquals(esperado,recibido,0.5);
+        assertEquals(esperado,actual,0.15d);
     }
     
 }

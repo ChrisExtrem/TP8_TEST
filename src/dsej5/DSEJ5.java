@@ -10,7 +10,7 @@ public class DSEJ5 {
         p1.setCuotas(3);
         p1.setDescripcion("Plan Cuota Adelantada");
         p1.setInteres(0.05);
-        
+  
         PlanCuotaVencida p2 = new PlanCuotaVencida();
         p2.setCodigo(1);
         p2.setCuotas(3);
